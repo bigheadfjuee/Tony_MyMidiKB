@@ -1,0 +1,233 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'MyMIDI'
+  ClientHeight = 305
+  ClientWidth = 352
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object cbKey: TComboBox
+    Items.Strings = (
+      'C'
+      'D'
+      'E'
+      'F'
+      'G'
+      'A'
+      'B')
+    ItemIndex = 0
+    Position.X = 56.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnChange = cbKeyChange
+  end
+  object cbSharpNote: TCheckBox
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = '#'
+    TextSettings.Font.Size = 25.000000000000000000
+    OnChange = cbSharpNoteChange
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Enabled = False
+    Position.X = 16.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 317.000000000000000000
+    Viewport.Height = 149.000000000000000000
+  end
+  object edtKey: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 288.000000000000000000
+    Position.Y = 24.000000000000000000
+    Enabled = False
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object cbOctave: TComboBox
+    Items.Strings = (
+      '0'
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8')
+    ItemIndex = 4
+    Position.X = 120.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    OnChange = cbOctaveChange
+  end
+  object cbInstrument: TComboBox
+    Items.Strings = (
+      'Acoustic Grand Piano'
+      'Bright Acoustic Piano'
+      'Electric Grand Piano'
+      'Honky-tonk Piano'
+      'Electric Piano 1'
+      'Electric Piano 2'
+      'Harpsichord'
+      'Clavi'
+      'Celesta'
+      'Glockenspiel'
+      'Music Box'
+      'Vibraphone'
+      'Marimba'
+      'Xylophone'
+      'Tubular Bells'
+      'Dulcimer'
+      'Drawbar Organ'
+      'Percussive Organ'
+      'Rock Organ'
+      'Church Organ'
+      'Reed Organ'
+      'Accordion'
+      'Harmonica'
+      'Tango Accordion'
+      'Acoustic Guitar (nylon)'
+      'Acoustic Guitar (steel)'
+      'Electric Guitar (jazz)'
+      'Electric Guitar (clean)'
+      'Electric Guitar (muted)'
+      'Overdriven Guitar'
+      'Distortion Guitar'
+      'Guitar harmonics'
+      'Acoustic Bass'
+      'Electric Bass (finger)'
+      'Electric Bass (pick)'
+      'Fretless Bass'
+      'Slap Bass 1'
+      'Slap Bass 2'
+      'Synth Bass 1'
+      'Synth Bass 2'
+      'Violin'
+      'Viola'
+      'Cello'
+      'Contrabass'
+      'Tremolo Strings'
+      'Pizzicato Strings'
+      'Orchestral Harp'
+      'Timpani'
+      'String Ensemble 1'
+      'String Ensemble 2'
+      'SynthStrings 1'
+      'SynthStrings 2'
+      'Choir Aahs'
+      'Voice Oohs'
+      'Synth Voice'
+      'Orchestra Hit'
+      'Trumpet'
+      'Trombone'
+      'Tuba'
+      'Muted Trumpet'
+      'French Horn'
+      'Brass Section'
+      'SynthBrass 1'
+      'SynthBrass 2'
+      'Soprano Sax'
+      'Alto Sax'
+      'Tenor Sax'
+      'Baritone Sax'
+      'Oboe'
+      'English Horn'
+      'Bassoon'
+      'Clarinet'
+      'Piccolo'
+      'Flute'
+      'Recorder'
+      'Pan Flute'
+      'Blown Bottle'
+      'Shakuhachi'
+      'Whistle'
+      'Ocarina'
+      'Lead 1 (square)'
+      'Lead 2 (sawtooth)'
+      'Lead 3 (calliope)'
+      'Lead 4 (chiff)'
+      'Lead 5 (charang)'
+      'Lead 6 (voice)'
+      'Lead 7 (fifths)'
+      'Lead 8 (bass + lead)'
+      'Pad 1 (new age)'
+      'Pad 2 (warm)'
+      'Pad 3 (polysynth)'
+      'Pad 4 (choir)'
+      'Pad 5 (bowed)'
+      'Pad 6 (metallic)'
+      'Pad 7 (halo)'
+      'Pad 8 (sweep)'
+      'FX 1 (rain)'
+      'FX 2 (soundtrack)'
+      'FX 3 (crystal)'
+      'FX 4 (atmosphere)'
+      'FX 5 (brightness)'
+      'FX 6 (goblins)'
+      'FX 7 (echoes)'
+      'FX 8 (sci-fi)'
+      'Sitar'
+      'Banjo'
+      'Shamisen'
+      'Koto'
+      'Kalimba'
+      'Bag pipe'
+      'Fiddle'
+      'Shanai'
+      'Tinkle Bell'
+      'Agogo'
+      'Steel Drums'
+      'Woodblock'
+      'Taiko Drum'
+      'Melodic Tom'
+      'Synth Drum'
+      'Reverse Cymbal'
+      'Guitar Fret Noise'
+      'Breath Noise'
+      'Seashore'
+      'Bird Tweet'
+      'Telephone Ring'
+      'Helicopter'
+      'Applause'
+      'Gunshot')
+    ItemIndex = 25
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    OnChange = cbInstrumentChange
+  end
+  object btnPlay: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 7
+    Text = 'Click Me'
+    OnKeyDown = btnPlayKeyDown
+    OnKeyUp = btnPlayKeyUp
+  end
+end

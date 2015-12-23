@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/11/25 11:29:29.000.787,=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/12/16 13:56:39.000.589,=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/12/16 13:59:00.000.036,=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/12/23 10:32:49.000.456,=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/12/23 10:45:48.000.008,F:\1MyMidiKB\Unit1.fmx=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2015/12/23 10:45:48.000.008,F:\1MyMidiKB\Unit1.pas=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/12/23 10:45:55.000.752,F:\1MyMidiKB\MyMidiKB.dproj=C:\Users\tony\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2015/12/23 14:02:28.187,=F:\1MyMidiKB\New1.txt</Transaction>
+    <Transaction>2015/12/23 14:02:46.151,F:\1MyMidiKB\AboutMIDI.txt=F:\1MyMidiKB\New1.txt</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PTony-MBP iOSSimulator="iPhone5"/>
+		<NoProfile Android="0a17af95"/>
+	</ActiveMobileDevice>
+</BorlandProject>
